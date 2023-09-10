@@ -8,9 +8,7 @@ public class Practice03 {
 
         int magicNumber = (int) (Math.random() * 101);
         int yourGuess;
-
         System.out.println("Guess a magic number between 0 and 100");
-
         while(true){
             System.out.print("Enter your guess : ");
             yourGuess = input.nextInt();

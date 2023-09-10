@@ -15,7 +15,7 @@ public class Question_05_02 {
             System.out.print("What is " + num1 + "+" + num2 + "? ");
             int answer = input.nextInt();
             if ((answer) == (num1 + num2)) {
-                
+
                 System.out.println(" You are correct!");
                 correct++;
             } else
