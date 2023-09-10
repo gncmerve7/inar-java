@@ -3,7 +3,7 @@ package week_05.assignments;
 import java.util.Scanner;
 
 public class Question_05_02 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         int correct = 0;
         long timeOfStart = System.currentTimeMillis();
@@ -15,6 +15,7 @@ public class Question_05_02 {
             System.out.print("What is " + num1 + "+" + num2 + "? ");
             int answer = input.nextInt();
             if ((answer) == (num1 + num2)) {
+                
                 System.out.println(" You are correct!");
                 correct++;
             } else
