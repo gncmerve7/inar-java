@@ -3,7 +3,7 @@ package week_04.assignments;
 import java.util.Scanner;
 
 public class Question_04_02 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         final double RADIUS = 6371.01;
 

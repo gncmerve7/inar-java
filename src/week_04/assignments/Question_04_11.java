@@ -2,7 +2,7 @@ package week_04.assignments;
 
 import java.util.Scanner;
 
-public class Question_04_11 {
+public class Question_04_11{
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter a decimal value(0 to 15): ");

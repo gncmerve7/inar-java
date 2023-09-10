@@ -1,14 +1,13 @@
-package week_04.assignments;
+package week_05.assignments;
 
 import java.util.Scanner;
 
-public class Question_04_19 {
+public class Question_05_36 {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.print("Enter the first digit of ISBN: ");
-        String isbn=input.nextLine();
-
-
+        String isbn = input.nextLine();
+        /*  Question_04_19
         int d1=Integer.valueOf(isbn.substring(0,1));
         int d2=Integer.valueOf(isbn.substring(1,2));
         int d3=Integer.valueOf(isbn.substring(2,3));
@@ -17,13 +16,17 @@ public class Question_04_19 {
         int d6=Integer.valueOf(isbn.substring(5,6));
         int d7=Integer.valueOf(isbn.substring(6,7));
         int d8=Integer.valueOf(isbn.substring(7,8));
-        int d9=Integer.valueOf(isbn.substring(8));
+        int d9=Integer.valueOf(isbn.substring(8));*/
 
-        int d10 = (d1 * 1 + d2 * 2 + d3 * 3 + d4 * 4 + d5 * 5
-                + d6 * 6 + d7 * 7 + d8 * 8 + d9 * 9) % 11;
+int count=0;
+int d10=0;
+        for (int i = 0; i <= 8; i++) {
+            int d = Integer.valueOf(isbn.substring(i, i + 1));
 
-        System.out.println("The ISBN-10 number is " +isbn+ d10);
-
-
+ d10+=(d*(i+1));}
+        if((d10%11)==10)
+            System.out.println(isbn+"X");
+        else
+            System.out.println(isbn+(d10%11));
     }
 }

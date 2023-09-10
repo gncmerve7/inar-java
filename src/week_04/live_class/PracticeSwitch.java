@@ -3,7 +3,7 @@ package week_04.live_class;
 import java.util.Scanner;
 
 public class PracticeSwitch {
-    public static void main(String[] args) {
+    public static void main(String[] args)   {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter 1 for Monday 2 for Tuesday and ..!");
         int day=input.nextInt();

@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class Question_05_01 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         int negativeNum = 0;
         int positiveNum = 0;
         int sumOfNum = 0;
         int count = 0;
+
         System.out.print("Enter an integer, the input ends if it is 0: ");
         int number = input.nextInt();
 

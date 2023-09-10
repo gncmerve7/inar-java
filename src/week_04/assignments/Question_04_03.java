@@ -1,7 +1,7 @@
 package week_04.assignments;
 
 public class Question_04_03 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         final double RADIUS = 6371.01;
         double yAtlanta = -84.3879824;
         double xAtlanta = 33.7489954;

@@ -9,18 +9,16 @@ public class Question_04_17 {
         int year = input.nextInt();
         System.out.print("Enter a month:");
         String month = input.next();
+        boolean leapYear = (year % 4 == 0 && year % 100 != 0);
 
         String monthc = month.substring(0, 3);
-        boolean leapYear = (year % 4 == 0 && year % 100 != 0);
         switch (monthc) {
 
             case ("Jan"):
                 System.out.println("Jan " + year + " has 31 days.");
                 break;
             case ("Feb"):
-               // System.out.println((year=leapYear)?"29":"28");break;
-                System.out.println("Feb " + year + " has 28 days.");
-                break;
+                System.out.println((leapYear)?"29":"28");break;
             case ("Mar"):
                 System.out.println("Mar " + year + " has 31 days.");
                 break;
@@ -51,9 +49,6 @@ public class Question_04_17 {
             case ("Dec"):
                 System.out.println("Jan " + year + " has 31 days.");
                 break;
-
-
         }
-
     }
 }
