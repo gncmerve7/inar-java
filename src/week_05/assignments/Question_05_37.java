@@ -14,4 +14,5 @@ public class Question_05_37 {
         }
         System.out.println("The binary value of the decimial " + numDeci + " is: " + numBin);
     }
+
 }

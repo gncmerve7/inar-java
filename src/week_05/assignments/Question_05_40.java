@@ -16,8 +16,6 @@ public class Question_05_40 {
         }
         System.out.println("Heads: " + head);
         System.out.println("Tails: " + tail);
-
     }
-
 
 }

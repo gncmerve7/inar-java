@@ -7,10 +7,9 @@ public class Question_05_41 {
         Scanner input = new Scanner(System.in);
         int numMax;
         System.out.println("Enter integers (it ends with input of 0) : ");
-        int num = input.nextInt();
+       // int num = input.nextInt();
 
-        while (num != 0) {
+      //  while (num != 0) {
 
         }
     }
-}
