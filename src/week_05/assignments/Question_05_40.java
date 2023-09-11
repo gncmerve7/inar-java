@@ -8,8 +8,8 @@ public class Question_05_40 {
 
         for (int flipsNum = 0; flipsNum <= 1000000; flipsNum++) {
 
-            int prob = (int) (Math.random() * 2);
-            if (prob == 1) {
+            double prob = (double) (Math.random());
+            if (prob <0.5) {
                 head++;
             } else
                 tail++;
