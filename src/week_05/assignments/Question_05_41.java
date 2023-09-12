@@ -16,11 +16,13 @@ public class Question_05_41 {
             {
                 if (num < numMax) {
                     numMin = num;
+
                 } if (num > numMax)
                     numMax = num;
+
             }
         }
         System.out.println("The largest count is "+ numMax+" and the occurrence of the count is ");
-//occurrence!
+//occurrencecount!
     }
 }
