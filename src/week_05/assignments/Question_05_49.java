@@ -13,11 +13,11 @@ public class Question_05_49 {
         System.out.print("Enter a string: ");
         String st = input.nextLine();
         int length = st.length();
-        String stL=st.toLowerCase();
+        String stL = st.toLowerCase();
         for (int i = 0; i < length; i++) {
             char ch = stL.charAt(i);
             if (Character.isLetter(ch)) {
-                if (ch == 'a' ||ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
                     vowels++;
                 } else {
                     consonats++;
@@ -28,6 +28,6 @@ public class Question_05_49 {
         System.out.println("The number of vowels:" + vowels);
         System.out.println("The number of consonants:" + consonats);
         System.out.println(st);
-   }
+    }
 
 }
