@@ -6,7 +6,7 @@ public class Question_05_37 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a decimial interger: ");
-        char newNum = ' ';
+        char reverseOfNum = ' ';
         int numDeci = input.nextInt();
         String numBin = "";
 
@@ -15,9 +15,9 @@ public class Question_05_37 {
         }
         System.out.print("The binary value of the decimial " + numDeci + " is: ");
         for (int k = (numBin.length() - 1); k >= 0; k--) {
-            newNum = numBin.charAt(k);
+            reverseOfNum = numBin.charAt(k);
 
-            System.out.print(newNum);
+            System.out.print(reverseOfNum);
         }
     }
 
