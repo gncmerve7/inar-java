@@ -14,6 +14,10 @@ public class Question_05_51 {
         int j = 0;
         char s1 = st1.charAt(i);
         char s2 = st2.charAt(j);
+        if (s1 != s2) {
+            System.out.println(st1 + " and " + st2 + " have no common prefix");
+        }
+        System.out.print("The common prefix is ");
         do {
             s1 = st1.charAt(i);
             s2 = st2.charAt(j);
@@ -21,8 +25,6 @@ public class Question_05_51 {
             i++;
             j++;
         } while (s1 == s2 && i < st1.length() && j < st2.length());
-        if (s1 != s2) {
-            System.out.println(st1 + " and " + st2 + " have no common prefix");
-        }
+
     }
 }
