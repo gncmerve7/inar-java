@@ -7,13 +7,20 @@ public class Question_05_38 {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter a decimial interger: ");
         int numDeci = input.nextInt();
+        char newNum = ' ';
         String numOct = "";
 
         for (int remaining = numDeci; remaining > 0; remaining /= 8) {
             numOct += (remaining % 8);
         }
-        System.out.println("The octal value of " + numDeci + " is: " + numOct);
-    }
+        System.out.print("The octal value of " + numDeci + " is: ");
 
+        for (int k = (numOct.length() - 1); k >= 0; k--) {
+            newNum = numOct.charAt(k);
+
+            System.out.print(newNum);
+
+        }
+    }
 }
 

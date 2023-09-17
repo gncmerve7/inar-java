@@ -6,7 +6,7 @@ public class Question_05_42 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-       /* System.out.print("Enter thr commission sought: ");
+        System.out.print("Enter thr commission sought: ");
         int comission_sought = input.nextInt();
 
         double salary = 5000;
@@ -27,12 +27,11 @@ public class Question_05_42 {
                 commission = (5000 * 0.08) + (5000 * 0.1) + ((salesAmount - 10000) * 0.12);
             }
 
-            if ((int) commission == 2000) {
+            if ((int) commission == comission_sought) {
 
                 System.out.println(salesAmount);
-
+                break;
             }
-
-        }*/
+        }
     }
 }

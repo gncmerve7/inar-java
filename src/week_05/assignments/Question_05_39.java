@@ -6,8 +6,7 @@ public class Question_05_39 {
 
         double salary = 5000; //comission should be 25k
         double commission = 0;
-
-        for (double salesAmount = 1; salesAmount > 0; salesAmount++) {
+        for (double salesAmount = 1; salesAmount > 0; salesAmount += 0.01) {
 
             if (0.1 <= salesAmount && salesAmount <= 5000) {
 
@@ -22,12 +21,10 @@ public class Question_05_39 {
                 commission = (5000 * 0.08) + (5000 * 0.1) + ((salesAmount - 10000) * 0.12);
             }
 
-            if ((int) commission == 25000) {
-
+            if (commission > 25000) {
                 System.out.println(salesAmount);
-
+                break;
             }
-
         }
     }
 }
