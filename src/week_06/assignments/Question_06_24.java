@@ -41,10 +41,21 @@ public class Question_06_24 {
     }
 
     public static Date getDate(Date currentDate) {
-        currentDate = new Date();
+
+       currentDate = new Date();
         SimpleDateFormat datedForm = new SimpleDateFormat("MM/dd/YYYY");
         System.out.print(datedForm.format(currentDate));
         return currentDate;
     }
+/*public static int daysInYear(long miliseconds){
+    long totalMilliseconds = System.currentTimeMillis();
 
+    int totalDays=(int)(( ((((totalMilliseconds/1000)%60)/60)%60)/60)%24);
+        int year=1970;
+        while (totalDays>daysInYear(year)){
+            totalDays-=daysInYear(year);
+        }
+    System.out.println(year);
+     return year;
+}*/
 }

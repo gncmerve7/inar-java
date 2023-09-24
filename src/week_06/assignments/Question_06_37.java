@@ -10,7 +10,7 @@ public class Question_06_37 {
         int number = input.nextInt();
         System.out.print("");
         int width = input.nextInt();
-        System.out.print(number + " formatted to width " + width+": "+format(number,width)+number);
+        System.out.print(number + " formatted to width " + width+": "+format(number,width));
     }
 
     public static String format(int num, int width) {
@@ -18,12 +18,12 @@ public class Question_06_37 {
         String widthS = String.valueOf(width);
         String formatted = "";
         if (numS.length() > width) {
-            return formatted;
+            return formatted+num;
         } else {
             for (int i = 0; i < width - numS.length(); i++)
                 formatted += "0";
 
-            return formatted;
+            return formatted+num;
         }
     }
 }
