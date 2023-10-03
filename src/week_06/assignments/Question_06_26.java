@@ -21,7 +21,7 @@ public class Question_06_26 {
     }
 
     public static boolean isPrime(int number) {
-        for (int divisor = 2; divisor < number; divisor++) {
+        for (int divisor = 2; divisor < number/2; divisor++) {
             if (number % divisor == 0)
                 return false;
         }
