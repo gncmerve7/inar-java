@@ -26,11 +26,12 @@ public class Question_07_17 {
             for (int i = 0; i < score.length; i++) {
                 if (score[i] < tempMin) {
                     tempMin = score[i];
-                    score[i]=score[j];
-                   // System.out.println("Player: " + j + " ,score: " + score[j]);
+                    score[i] = score[j];
+                    // System.out.println("Player: " + j + " ,score: " + score[j]);
                 }
             }
 
         }
-    }}
+    }
+}
 
