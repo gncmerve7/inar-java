@@ -1,4 +1,4 @@
-package week_09.assignments.question_09_09;
+package week_09.assignments.Question_09_09;
 
 public class Test09 {
     public static void main(String[] args) {
