@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Question_08_29 {
     public static void main(String[] args) {
 
-       // if (isEqual()) {
-            System.out.println("The two arrays are identical.");
-       // } else
-       //     System.out.println("The two arrays are not identical.");
+        if (isEqual()) {
+        System.out.println("The two arrays are identical.");
+         } else
+            System.out.println("The two arrays are not identical.");
     }
 
     public static int[][] createMatrix(int num1, int num2) {
@@ -28,24 +28,27 @@ public class Question_08_29 {
         boolean equal = true;
         int[][] arr1 = createMatrix(3, 3);
         int[][] arr2 = createMatrix(3, 3);
-        //sort(arr1);
-       // sort(arr2);
-        for (int i = 0; i < arr1.length; i++) {
-            for (int j = 0; j < arr1[i].length; j++) {
-                System.out.println(arr1[i][j]+" ");
-                if (arr1[i][j] != arr2[i][j]) {
-                    equal = false;
-                } else
-                    equal = true;
-            }
-        }
+
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j <3; j++) {
+
+        }}
 
         return equal;
 
     }
 
-    public static void sort(int[][] arr) {
+    public static int[] sort(int[]arr) {
         Arrays.sort(arr);
-       // return arr;
+            return arr;
+    }
+
+    public static void display(int arr[][]) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
 }
