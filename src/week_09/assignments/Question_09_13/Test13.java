@@ -8,12 +8,9 @@ public class Test13 {
         System.out.print("Enter the number of rows and columns in the array: ");
         int row = scan.nextInt();
         int col = scan.nextInt();
-        int arr[][] = new int[row][col];
 
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = scan.nextInt();
-            }
-        }
+        Location arr1 = new Location(row, col);
+        System.out.println(arr1.getMax(arr1.getArray()));
+
     }
 }
