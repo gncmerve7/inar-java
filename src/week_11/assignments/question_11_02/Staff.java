@@ -6,8 +6,9 @@ public class Staff extends Employee {
     Staff() {
     }
 
-    Staff( String name, String address, long phone, String email,int officeHours, double salary,String title) {
-        super(name, address, phone, email,officeHours,salary);
+    Staff(String name, String address, long phone, String email, int officeNum, double salary, String title) {
+        super(name, address, phone, email, officeNum, salary);
+
         this.title = title;
     }
 
