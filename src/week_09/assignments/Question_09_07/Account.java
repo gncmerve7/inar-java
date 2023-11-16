@@ -11,7 +11,7 @@ public class Account {
     public double withdraw;
     public double deposit;
 
-    Account() {
+    protected Account() {
         this.id = 0;
         this.balance = 0;
         this.annualInterestRate = 0;
@@ -20,11 +20,21 @@ public class Account {
         this.deposit = 0;
     }
 
-    Account(int id, double deposit, double withdraw, double balance, double annualInterestRate) {
+    protected Account(int id, double deposit, double withdraw, double balance, double annualInterestRate) {
         this.id = id;
         this.balance = balance + deposit - withdraw;
         this.annualInterestRate = annualInterestRate;
         this.dateCreated = new Date();
+    }
+
+    protected Account(int id, int balance,double deposit, double withdraw) {
+        this.id = id;
+        this.balance = balance + deposit - withdraw;
+    }
+
+    protected Account(int id, double balance) {
+        this.id = id;
+        this.balance = balance;
     }
 
     public double getMonthlyInterestRate() {
@@ -73,5 +83,10 @@ public class Account {
 
     public Date getDateCreated() {
         return dateCreated;
+    }
+
+    public String toString() {
+        return "Account  ID   : " + getId() + "\nBalance       : $" + getBalance();
+
     }
 }
