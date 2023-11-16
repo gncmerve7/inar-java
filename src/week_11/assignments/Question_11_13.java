@@ -18,11 +18,11 @@ public class Question_11_13 {
     }
 
     public static void removeDuplicates(ArrayList<Integer> list) {
-
         for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i+1).equals(list.get(i))) {
+            if (list.get(i + 1).equals(list.get(i))) {
 
-                list.remove(i+1);
+                list.remove(i + 1);
+                i--;
 
             }
         }
