@@ -8,7 +8,7 @@ public class Question_11_13 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         ArrayList<Integer> list = new ArrayList<>();
-
+        System.out.println("Enter 10 integers:");
         do {
             int element = scan.nextInt();
             list.add(element);
@@ -18,12 +18,13 @@ public class Question_11_13 {
     }
 
     public static void removeDuplicates(ArrayList<Integer> list) {
-        for (int i = 0; i < list.size() - 1; i++) {
-            if (list.get(i + 1).equals(list.get(i))) {
+        for (int i = 0; i < list.size(); i++) {
+            for (int j = i + 1; j < list.size(); j++) {
 
-                list.remove(i + 1);
-                i--;
-
+                if (list.get(i).equals(list.get(j))) {
+                    list.remove(list.get(i));
+                    j--;
+                }
             }
         }
         System.out.println(list);
