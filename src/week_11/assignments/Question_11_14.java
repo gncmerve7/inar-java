@@ -18,7 +18,7 @@ public class Question_11_14 {
 
         System.out.println("Enter the size of list:");
         int size = scan.nextInt();
-        System.out.println("Enter " + size + " integers for list:");
+        System.out.println("Enter "+ size + " integers for list:");
 
         int element;
         do {
