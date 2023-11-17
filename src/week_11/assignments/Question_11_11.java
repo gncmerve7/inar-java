@@ -11,11 +11,15 @@ public class Question_11_11 {
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println("Enter 5 integers");
 
+        int element;
         do {
+            element = scan.nextInt();
 
-            list.add(scan.nextInt());
+            if (element != 0) {
+                list.add(element);
+            }
 
-        } while (list.size() < 5);
+        } while (element != 0);
 
         System.out.println("Before sorting: " + list);
 
