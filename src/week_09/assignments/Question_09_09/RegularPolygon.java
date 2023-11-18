@@ -13,7 +13,7 @@ public class RegularPolygon {
         y = 0;
     }
 
-    RegularPolygon(int n, double side) {
+   public RegularPolygon(int n, double side) {
 
         this.n = n;
         this.side = side;
