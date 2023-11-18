@@ -6,7 +6,7 @@ public class RegularPolygon {
     private double x;
     private double y;
 
-    RegularPolygon() {
+    protected RegularPolygon() {
         n = 3;
         side = 1;
         x = 0;
@@ -19,7 +19,7 @@ public class RegularPolygon {
         this.side = side;
     }
 
-    RegularPolygon(int n, double side, double x, double y) {
+    public RegularPolygon(int n, double side, double x, double y) {
         this.n = n;
         this.side = side;
         this.x = x;
