@@ -6,7 +6,7 @@ import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class ReplaceText {
-    public static void main(String[] args) /*throws FileNotFoundException*/ {
+    public static void main(String[] args) throws FileNotFoundException {
         if (args.length != 4) {
             System.out.println("Usage: java ReplaceText sourceFile targetFile oldStr newStr");
             System.exit(1);
