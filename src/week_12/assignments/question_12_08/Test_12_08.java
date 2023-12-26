@@ -7,27 +7,42 @@ public class Test_12_08 {
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter a hex number: ");
 
-       /* try {
+        try {
             String hexNum = scan.nextLine().toUpperCase();
             hex2Dec(hexNum);
             System.out.println("The decimal value of hex number " + hexNum + " is " + hex2Dec(hexNum));
 
-       } catch (HexFormatException e) {
+        } catch (HexFormatException e) {
             System.out.println(e.toString());
-    */   // }
+            System.out.println("it works");
+        }
     }
 
     public static int hex2Dec(String st) throws HexFormatException {
-        for (int i = 0; i < st.length(); i++) {
-            if (!((st.charAt(i) >= '0' && st.charAt(i) <= 'F'))) {
-                throw new HexFormatException("It is not a hex string.");
+        try {
+            for (int i = 0; i < st.length(); i++) {
+                if (!((st.charAt(i) >= '0' || (st.charAt(i) <= '9') && (st.charAt(i) <= 'F') || st.charAt(i) >= 'A'))) {
+                    throw new HexFormatException("It is not a hex string.");
+                }
             }
+
+        } catch (HexFormatException e) {
+            System.out.println(e);
+            System.out.println("it works2");
+
         }
         return convert(st);
     }
 
     public static int convert(String str) {
-        int newNum = Integer.parseInt(str, 16);
+        int newNum = 0;
+        try {
+            newNum = Integer.parseInt(str, 16);
+        } catch (NumberFormatException s) {
+            System.out.println(s);
+            System.out.println("it works3");
+
+        }
         return newNum;
     }
 }
